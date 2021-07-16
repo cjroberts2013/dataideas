@@ -612,10 +612,10 @@ To Help out the community we are taking 5% of all connection sales and donate it
 
         function showShared() {
             sharedPricing.forEach((x) => {
-                x.classList.remove("hidden", "sm:hidden");
+                x.classList.remove("hidden", "md:hidden");
             })
             dedicatedPricing.forEach((x) => {
-                x.classList.add("hidden", "sm:hidden");
+                x.classList.add("hidden", "md:hidden");
             })
             sharedBtn.classList.add("bg-white", "border-gray-200", "shadow-sm", "text-gray-900");
             sharedBtn.classList.remove("bg-gray-200", "border", "border-transparent", "text-gray-700");
@@ -625,10 +625,10 @@ To Help out the community we are taking 5% of all connection sales and donate it
 
         function showDedicated() {
             sharedPricing.forEach((x) => {
-                x.classList.add("hidden", "sm:hidden");
+                x.classList.add("hidden", "md:hidden");
             })
             dedicatedPricing.forEach((x) => {
-                x.classList.remove("hidden", "sm:hidden");
+                x.classList.remove("hidden", "md:hidden");
             })
             sharedBtn.classList.remove("bg-white", "border-gray-200", "shadow-sm", "text-gray-900");
             sharedBtn.classList.add("bg-gray-200", "border", "border-transparent", "text-gray-700");
