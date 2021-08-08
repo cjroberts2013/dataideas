@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="images/txnet-favicon.png">
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
     <title>TXNet</title>
 </head>
 <body>
@@ -748,6 +749,16 @@ To Help out the community we are taking 5% of all connection sales and donate it
         var mobileMenu = document.querySelector(".mobile-menu");
         var homeMenu = document.querySelector(".home-menu");
         var mobileHomeMenu = document.querySelectorAll(".mobile-home-menu");
+
+        jQuery( function ($) {
+          $('.menu-toggle').click( function() {
+            $('.menu').toggleClass('menu-open');
+          } );
+        } );
+
+        $('html').click(() => {
+          closeMenu();
+        })
 
         var openMenu = () => {
             openBtn.style.display = "none";
